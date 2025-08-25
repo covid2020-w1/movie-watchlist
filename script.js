@@ -22,7 +22,7 @@ document.getElementById("search-form").addEventListener("submit", (e)=>{
         })
         .then(idArray => {
             idArray.forEach(id => {
-                fetch(`http://www.omdbapi.com/?apikey=dfd77a18&i=${id}`)
+                fetch(`https://www.omdbapi.com/?apikey=dfd77a18&i=${id}`)
                     .then(res => res.json())
                     .then(data => {
                         console.log(data)
@@ -60,7 +60,7 @@ document.addEventListener("click", (e)=>{
         if(watchlist.filter(movie => movie.Id === targetId).length){
             console.log("already added")
         }else{
-            fetch(`http://www.omdbapi.com/?apikey=dfd77a18&i=${targetId}`)
+            fetch(`https://www.omdbapi.com/?apikey=dfd77a18&i=${targetId}`)
                 .then(res => res.json())
                 .then(data => {
                     watchlist.push(
