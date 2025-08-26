@@ -2,6 +2,7 @@
 //ok so what i actually want to do is to use the api to search by the keyword and return an array of movie ids. loop through each of these items and call the api to return the plot, and other things to render it into the html
 //what do i want to do now? yeah sub in the reatings
 //now what i want to do is to start creating the watchlist.html. decide if it makes sense to share the same .js file, or to create a new one. Then see if localStorage carries across sessions, and then see if you can generate a list of items. then work on the minus buttons.s
+//i think what i could do to refactor the code is the following: use that thing that lets me reassign variables in object notation in more terse variables; use more function declarations; maybe only store an array of ids and using those to fetch the data i need from the api rather than create new data; answer the q of whether its better to have one .js file per page or one overall; creating a splash page; creating a "no results found" page; using async await instead 
 
 let idArray
 let watchlist = []
