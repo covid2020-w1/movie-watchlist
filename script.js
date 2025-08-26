@@ -10,7 +10,7 @@ document.getElementById("search-form").addEventListener("submit", (e)=>{
     e.preventDefault()
     const searchQuery = document.getElementById("search-input").value
 
-    fetch(`http://www.omdbapi.com/?apikey=dfd77a18&s=${searchQuery}`)
+    fetch(`https://www.omdbapi.com/?apikey=dfd77a18&s=${searchQuery}`)
         .then(res => res.json())
         .then(data => {
             console.log(data)
